@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Grant Management | EM420 Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation included via React component -->
+    <div id="nav-root"></div>
+
+    <!-- Project Header -->
+    <header class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold mb-6 text-center">AI/LLM in Emergency Management Grant Processing</h1>
+                <p class="text-xl text-gray-600 text-center mb-8">A Case Study in Modernizing FEMA Grant Management</p>
+                
+                <!-- Project Overview -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">Project Summary</h2>
+                    <p class="mb-4">This project demonstrates the practical application of advanced AI technologies to streamline federal grant management processes, specifically focusing on FEMA's HMGP and BRIC programs.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Technical Implementation -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Technical Implementation</h2>
+                <div class="bg-white p-8 rounded-lg shadow space-y-6">
+                    <!-- Model Architecture -->
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Model Architecture</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <p class="font-bold">GPT-Neo 1.3B</p>
+                                <ul class="list-disc pl-6">
+                                    <li>1.3 billion parameters</li>
+                                    <li>24 layers</li>
+                                    <li>2048 context window</li>
+                                    <li>Complex narrative generation</li>
+                                    <li>Primary document creation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-bold">GPT-2 Small</p>
+                                <ul class="list-disc pl-6">
+                                    <li>124 million parameters</li>
+                                    <li>12 layers</li>
+                                    <li>1024 context window</li>
+                                    <li>Quick requirement checking</li>
+                                    <li>Initial draft review</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-bold">GPT-J (Batched Processing)</p>
+                                <ul class="list-disc pl-6">
+                                    <li>6 billion parameters</li>
+                                    <li>28 layers</li>
+                                    <li>2048 context window</li>
+                                    <li>Advanced validation</li>
+                                    <li>Optimized batch processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Implementation Strategy -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Implementation Strategy</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold">Multi-Model Pipeline</h4>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li><strong>Initial Processing (GPT-2 Small):</strong> Handles quick requirement checks and initial draft validation</li>
+                                    <li><strong>Document Generation (GPT-Neo):</strong> Creates comprehensive grant narratives and detailed documentation</li>
+                                    <li><strong>Final Validation (GPT-J):</strong> Performs advanced review and validation through optimized batch processing</li>
+                                </ul>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="font-bold">Batch Processing Implementation</h4>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li>Chunked document processing for memory optimization</li>
+                                    <li>Parallel validation streams for efficiency</li>
+                                    <li>Resource-aware scheduling</li>
+                                    <li>Error handling and recovery mechanisms</li>
+                                    <li>Adaptive batch sizing based on available resources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- System Architecture -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">System Architecture</h2>
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <!-- Architecture Diagram -->
+                    <div class="mb-8">
+                        <div class="w-full overflow-hidden rounded-lg border border-gray-200">
+                            <img src="assets/images/system-architecture.png" 
+                                 alt="ML System Architecture Diagram showing the flow from input through GPT models to output" 
+                                 class="w-full h-auto object-contain mx-auto"
+                                 style="max-width: 800px;">
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 text-center">Figure 1: System Architecture - Multi-Model Pipeline with Batch Processing</p>
+                    </div>
+                    
+                    <!-- Rest of the architecture content -->
+                    <div class="space-y-6">
+                        <!-- Architecture components content... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                    <!-- Architecture Details -->
+                    <div class="space-y-6">
+                        <!-- Input Layer -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Input Layer</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li><strong>Grant Requirements:</strong> Automated parsing of FEMA guidelines and program-specific requirements</li>
+                                    <li><strong>Historical Data:</strong> Analysis of past successful applications and outcomes</li>
+                                    <li><strong>User Input:</strong> Interactive form data and project-specific information</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Model Pipeline -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Model Pipeline</h3>
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-bold mb-2">Initial Processing</h4>
+                                    <p class="text-sm mb-2">GPT-2 Small (124M parameters)</p>
+                                    <ul class="list-disc pl-4 text-sm">
+                                        <li>Quick requirement validation</li>
+                                        <li>Initial document structure</li>
+                                        <li>Basic compliance checks</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-bold mb-2">Document Generation</h4>
+                                    <p class="text-sm mb-2">GPT-Neo 1.3B</p>
+                                    <ul class="list-disc pl-4 text-sm">
+                                        <li>Narrative development</li>
+                                        <li>Technical documentation</li>
+                                        <li>Cost-benefit analysis</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-bold mb-2">Advanced Validation</h4>
+                                    <p class="text-sm mb-2">GPT-J (6B parameters)</p>
+                                    <ul class="list-disc pl-4 text-sm">
+                                        <li>Batch processing</li>
+                                        <li>Deep validation</li>
+                                        <li>Quality assurance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Batch Processing -->
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Batch Processing System</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-bold mb-2">Resource Management</h4>
+                                        <ul class="list-disc pl-6 text-sm">
+                                            <li>Dynamic batch sizing</li>
+                                            <li>Memory optimization</li>
+                                            <li>Parallel processing</li>
+                                            <li>Resource monitoring</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Process Flow</h4>
+                                        <ul class="list-disc pl-6 text-sm">
+                                            <li>Document chunking</li>
+                                            <li>Sequential validation</li>
+                                            <li>Error handling</li>
+                                            <li>Result aggregation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples and Results -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Implementation Examples</h2>
+
+                <!-- Performance Metrics -->
+                <div class="bg-white p-8 rounded-lg shadow mb-8">
+                    <h3 class="text-xl font-bold mb-6">System Performance</h3>
+                    <div class="grid md:grid-cols-4 gap-4 mb-8">
+                        <div class="text-center p-4 bg-blue-50 rounded">
+                            <p class="text-2xl font-bold text-blue-600">95%</p>
+                            <p class="text-sm">Accuracy Rate</p>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded">
+                            <p class="text-2xl font-bold text-green-600">50%</p>
+                            <p class="text-sm">Time Reduction</p>
+                        </div>
+                        <div class="text-center p-4 bg-purple-50 rounded">
+                            <p class="text-2xl font-bold text-purple-600">20+</p>
+                            <p class="text-sm">Hours Saved</p>
+                        </div>
+                        <div class="text-center p-4 bg-yellow-50 rounded">
+                            <p class="text-2xl font-bold text-yellow-600">3x</p>
+                            <p class="text-sm">Throughput</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example Outputs -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- BCA Analysis -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-bold mb-4">BCA Analysis</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                            <h4 class="font-bold mb-2">Input:</h4>
+                            <div class="bg-white p-3 rounded border border-gray-200">
+                                <pre class="text-sm">Project: Flood Mitigation
+Location: [44.839, -122.585]
+Damage History: $2.5M
+Timeline: 50 years</pre>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Output:</h4>
+                            <div class="bg-white p-3 rounded border border-gray-200">
+                                <pre class="text-sm">BCR: 2.4
+Benefits: $5.8M NPV
+✓ FEMA Compliant</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Requirement Validation -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-bold mb-4">Requirement Check</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Validation Results:</h4>
+                            <div class="space-y-2">
+                                <p class="font-mono text-sm text-green-600">✓ HMGP Eligibility</p>
+                                <p class="font-mono text-sm text-green-600">✓ Environmental Review</p>
+                                <p class="font-mono text-sm text-yellow-600">! Section 106 Review</p>
+                                <p class="font-mono text-sm">Required Documents:</p>
+                                <ul class="list-disc pl-6 font-mono text-sm">
+                                    <li>Historical documentation</li>
+                                    <li>Tribal consultation</li>
+                                    <li>Survey results</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Josh Curry - Emergency Management Technology Portfolio</p>
+            <p class="text-sm mt-2">Created as part of EM420: Technology and Cybersecurity in Emergency Management</p>
+            <div class="mt-4">
+                <a href="#" class="text-white hover:text-gray-200">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
