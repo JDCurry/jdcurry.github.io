@@ -20,13 +20,13 @@
                 <!-- Project Overview -->
                 <div class="bg-gray-50 p-6 rounded-lg">
                     <h2 class="text-2xl font-bold mb-4">Project Summary</h2>
-                    <p class="mb-4">This project demonstrates the practical application of advanced AI technologies to streamline federal grant management processes, specifically focusing on FEMA's HMGP and BRIC programs.</p>
+                    <p class="mb-4">This project demonstrates the practical application of advanced AI technologies to streamline federal grant management processes, specifically focusing on FEMA's HMGP and BRIC programs. By leveraging multiple language models and implementing batch processing, we've created a scalable solution for emergency management departments.</p>
                 </div>
             </div>
         </div>
     </header>
 
-<!-- Technical Implementation -->
+    <!-- Technical Implementation -->
     <section class="py-16">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-<!-- System Architecture -->
+    <!-- System Architecture -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -114,15 +114,6 @@
                         </div>
                         <p class="text-sm text-gray-600 mt-2 text-center">Figure 1: System Architecture - Multi-Model Pipeline with Batch Processing</p>
                     </div>
-                    
-                    <!-- Rest of the architecture content -->
-                    <div class="space-y-6">
-                        <!-- Architecture components content... -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
                     <!-- Architecture Details -->
                     <div class="space-y-6">
@@ -171,28 +162,83 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <!-- Batch Processing -->
-                        <div>
-                            <h3 class="text-xl font-bold mb-4">Batch Processing System</h3>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <div class="grid md:grid-cols-2 gap-4">
+    <!-- Training Pipeline -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Model Training Pipeline</h2>
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <!-- Training Pipeline Diagram -->
+                    <div class="mb-8">
+                        <div class="w-full overflow-hidden rounded-lg border border-gray-200">
+                            <img src="assets/images/training-pipeline.png" 
+                                 alt="Model Training Pipeline showing steps from data cleaning to model deployment" 
+                                 class="w-full h-auto object-contain mx-auto"
+                                 style="max-width: 600px;">
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 text-center">Figure 2: Training Pipeline Process Flow</p>
+                    </div>
+
+                    <!-- Pipeline Stages Description -->
+                    <div class="space-y-6">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <!-- Data Preparation -->
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h3 class="font-bold mb-2">Data Preparation</h3>
+                                <ul class="list-disc pl-4 text-sm space-y-2">
+                                    <li><strong>Data Cleaning:</strong> Removing PII, standardizing formats</li>
+                                    <li><strong>Tokenization:</strong> Text preprocessing for model input</li>
+                                    <li><strong>Format Standardization:</strong> Consistent document structure</li>
+                                </ul>
+                            </div>
+
+                            <!-- Model Training -->
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h3 class="font-bold mb-2">Training Process</h3>
+                                <ul class="list-disc pl-4 text-sm space-y-2">
+                                    <li><strong>Pre-training:</strong> Initial model adaptation</li>
+                                    <li><strong>Fine-tuning:</strong> Task-specific optimization</li>
+                                    <li><strong>Validation:</strong> Model performance verification</li>
+                                </ul>
+                            </div>
+
+                            <!-- Deployment -->
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h3 class="font-bold mb-2">Deployment</h3>
+                                <ul class="list-disc pl-4 text-sm space-y-2">
+                                    <li><strong>Performance Metrics:</strong> Key success indicators</li>
+                                    <li><strong>Model Deployment:</strong> Production implementation</li>
+                                    <li><strong>Monitoring:</strong> Continuous performance tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Detailed Pipeline Description -->
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold mb-4">Pipeline Details</h3>
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <div class="space-y-4">
                                     <div>
-                                        <h4 class="font-bold mb-2">Resource Management</h4>
-                                        <ul class="list-disc pl-6 text-sm">
-                                            <li>Dynamic batch sizing</li>
-                                            <li>Memory optimization</li>
-                                            <li>Parallel processing</li>
-                                            <li>Resource monitoring</li>
+                                        <h4 class="font-bold">Input Sources</h4>
+                                        <ul class="list-disc pl-6 space-y-1">
+                                            <li>FEMA Documents: Official guidelines and requirements</li>
+                                            <li>Historical Applications: Past successful grant applications</li>
+                                            <li>Grant Guidelines: Program-specific criteria and standards</li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold mb-2">Process Flow</h4>
-                                        <ul class="list-disc pl-6 text-sm">
-                                            <li>Document chunking</li>
-                                            <li>Sequential validation</li>
-                                            <li>Error handling</li>
-                                            <li>Result aggregation</li>
+                                        <h4 class="font-bold">Processing Steps</h4>
+                                        <ul class="list-disc pl-6 space-y-1">
+                                            <li>Data splitting for training/validation/testing</li>
+                                            <li>Incremental fine-tuning across model sizes</li>
+                                            <li>Performance validation against benchmarks</li>
+                                            <li>Iterative optimization based on results</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -204,7 +250,7 @@
         </div>
     </section>
 
-    <!-- Examples and Results -->
+ <!-- Examples and Results -->
     <section class="py-16">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
