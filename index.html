@@ -3,77 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Showcase | Pierce College | Winter 2025</title>
+    <title>EM420 Course Portfolio | Pierce College | Winter 2025</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <!-- Navigation -->
-    <nav class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">Josh Curry - Pierce College BAS Student</h1>
-            <div class="space-x-4">
-                <a href="#technologies" class="hover:text-gray-200">Technologies</a>
-                <a href="#learning" class="hover:text-gray-200">Learning Journey</a>
-                <a href="#expertise" class="hover:text-gray-200">Expertise Focus</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Navigation included via React component -->
+    <div id="nav-root"></div>
 
-    <!-- Hero Section with Bio -->
+    <!-- Hero Section -->
     <header class="bg-white py-16">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl font-bold mb-6 text-center">Emergency Management & Technology Portfolio</h1>
-                
-                <!-- Professional Bio with Image -->
-                <div class="bg-gray-50 p-6 rounded-lg mt-6">
-                    <div class="md:flex gap-6 mb-6">
-                        <!-- Image Section -->
-                        <div class="md:w-1/3 mb-4 md:mb-0">
-                            <img src="assets/images/volunteer-award.jpg" 
-                                 alt="Josh Curry receiving Outstanding Volunteer Service Award from City of Everett" 
-                                 class="rounded-lg w-full object-cover shadow-lg"
-                                 style="max-height: 400px;">
-                            <p class="text-sm text-gray-600 mt-2 text-center">Receiving Outstanding Volunteer Service Award from City of Everett, December 2024</p>
-                        </div>
-                        
-                        <!-- Text Section -->
-                        <div class="md:w-2/3">
-                            <h2 class="text-2xl font-bold mb-4">Professional Background</h2>
-                            <p class="mb-4">Emergency Management & Technology Professional with over a decade of experience bridging technology and disaster response. Spent five years with FEMA as an IT Network Specialist, ensuring mission-critical communications and data systems for first responders across the country. Recognized with FEMA Region X Teamwork Award for exceptional service.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6 mb-4">
-                        <div>
-                            <h3 class="font-bold mb-2">Current Roles</h3>
-                            <ul class="list-disc pl-6">
-                                <li>Pierce College BAS Student in Emergency Management</li>
-                                <li>Civil Service Commissioner, City of Everett</li>
-                                <li>Secretary, Everett Council of Neighborhoods Executive Committee</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold mb-2">Recent Recognition</h3>
-                            <ul class="list-disc pl-6">
-                                <li>2024 WSEMA Scholarship Recipient</li>
-                                <li>Outstanding Volunteer Service Award, City of Everett (2024)</li>
-                                <li>FEMA Region X Teamwork Award</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <h3 class="font-bold mb-2">Current Focus</h3>
-                        <p>Currently exploring the intersection of artificial intelligence and emergency management, developing a machine learning-based platform to streamline federal grant applications for HMGP and BRIC programs. Active in community preparedness, leading neighborhood-wide emergency preparedness initiatives and drills in Everett.</p>
-                    </div>
+            <h1 class="text-4xl font-bold mb-4 text-center">Technology and Cybersecurity in Emergency Management</h1>
+            <p class="text-xl text-gray-600 text-center">EM420 Course Portfolio - Winter 2025</p>
+            
+            <!-- Course Overview -->
+            <div class="max-w-3xl mx-auto mt-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">Course Highlights</h2>
+                    <p class="mb-4">This portfolio showcases my learning journey through EM420, focusing on the intersection of technology, cybersecurity, and emergency management. Key areas of study include:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Integration of emerging technologies in emergency response</li>
+                        <li>Cybersecurity considerations for critical infrastructure</li>
+                        <li>Advanced applications of AI in emergency management</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Technologies Section -->
-    <section id="technologies" class="py-16">
+<section id="technologies" class="py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-center">Key Technologies in Emergency Management</h2>
             <div class="grid md:grid-cols-3 gap-8">
@@ -209,125 +167,21 @@
         </div>
     </section>
 
-    <!-- Expertise Focus: AI/ML Project -->
-    <section id="expertise" class="py-16">
+    <!-- Link to AI Project -->
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Expertise Focus: AI/LLM in Grant Management</h2>
-            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow">
-                <div class="space-y-4">
-                    <h3 class="text-xl font-bold">Current Project: Streamlining Federal Grant Management</h3>
-                    <p>I'm developing an innovative solution using machine learning models (GPT-2 Small, GPT-Neo 1.3B, and GPT-J) to streamline the federal grant application process for emergency management departments. This project focuses on FEMA's Hazard Mitigation Grant Program (HMGP) and Building Resilient Infrastructure and Communities (BRIC) programs.</p>
-
-                    <!-- Model Testing Demo -->
-                    <h3 class="text-xl font-bold mt-6">Initial Model Testing</h3>
-                    <div class="bg-gray-50 p-4 rounded-lg mt-4">
-                        <p class="mb-4">Below is a demonstration of early testing using the GPT-Neo model trained on OpenFEMA datasets. This proof-of-concept showcases raw model outputs and initial implementation results:</p>
-                        
-                        <div class="relative w-full" style="padding-bottom: 56.25%;">
-                            <iframe 
-                                class="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/5SsEH1K1Aw0"
-                                title="Initial HMA Model Testing"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">Video: Initial testing demonstration of the HMA model utilizing GPT-Neo and OpenFEMA datasets</p>
-                    </div>
-                    
-                    <h3 class="text-xl font-bold mt-6">Technical Implementation</h3>
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <h4 class="font-bold mb-2">Model Architecture</h4>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <p class="font-bold">GPT-Neo 1.3B</p>
-                                <ul class="list-disc pl-6">
-                                    <li>1.3 billion parameters</li>
-                                    <li>24 layers</li>
-                                    <li>2048 context window</li>
-                                    <li>Complex narrative generation</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <p class="font-bold">GPT-2 Small</p>
-                                <ul class="list-disc pl-6">
-                                    <li>124 million parameters</li>
-                                    <li>12 layers
-									<li>12 layers</li>
-                                    <li>1024 context window</li>
-                                    <li>Quick requirement checking</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3 class="text-xl font-bold mt-6">Key Features & Examples</h3>
-                    
-                    <div class="space-y-6">
-                        <!-- BCA Example -->
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold mb-2">Benefit-Cost Analysis (BCA) Assistant</h4>
-                            <p class="mb-2">Interactive questionnaire example:</p>
-                            <div class="bg-white p-3 rounded border border-gray-200">
-                                <p class="font-mono text-sm">Project Type: Flood Mitigation</p>
-                                <p class="font-mono text-sm">Location: [44.839, -122.585]</p>
-                                <p class="font-mono text-sm">Historical Damage: $2.5M (Last 10 years)</p>
-                                <p class="font-mono text-sm">Proposed Solution: Elevation</p>
-                                <p class="font-mono text-sm">Expected Lifespan: 50 years</p>
-                            </div>
-                            <p class="mt-2 mb-2">Generated BCA Output:</p>
-                            <div class="bg-white p-3 rounded border border-gray-200">
-                                <p class="font-mono text-sm">BCR: 2.4 (Present Value Benefits / Costs)</p>
-                                <p class="font-mono text-sm">Total Benefits: $5.8M (Net Present Value)</p>
-                                <p class="font-mono text-sm">Project Costs: $2.4M</p>
-                                <p class="font-mono text-sm">✓ Meets FEMA minimum BCR requirement of 1.0</p>
-                            </div>
-                        </div>
-
-                        <!-- Project Development Example -->
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold mb-2">HMGP Project Development</h4>
-                            <div class="bg-white p-3 rounded border border-gray-200">
-                                <p class="font-mono text-sm">> Analyzing project scope...</p>
-                                <p class="font-mono text-sm text-green-600">✓ Project aligns with HMGP eligible activities</p>
-                                <p class="font-mono text-sm text-green-600">✓ Environmental review requirements identified</p>
-                                <p class="font-mono text-sm text-green-600">✓ Technical feasibility confirmed</p>
-                                <p class="font-mono text-sm text-yellow-600">! Additional documentation needed for Section 106</p>
-                                <p class="font-mono text-sm">Generated Requirements List:</p>
-                                <ul class="list-disc pl-6 font-mono text-sm">
-                                    <li>Historical property documentation</li>
-                                    <li>Tribal consultation records</li>
-                                    <li>Archaeological survey results</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- BRIC Competition Criteria -->
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold mb-2">BRIC Technical Scoring Assistant</h4>
-                            <div class="bg-white p-3 rounded border border-gray-200">
-                                <p class="font-mono text-sm">Project Analysis:</p>
-                                <p class="font-mono text-sm">- Risk Reduction Score: 35/35</p>
-                                <p class="font-mono text-sm">- Implementation Measures: 15/15</p>
-                                <p class="font-mono text-sm">- Population Impact: 25/30</p>
-                                <p class="font-mono text-sm">- Community Benefits: 20/20</p>
-                                <p class="font-mono text-sm text-blue-600">Recommendation: Strong competitive position</p>
-                                <p class="font-mono text-sm text-green-600">Total Technical Score: 95/100</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">Featured Project: AI in Grant Management</h2>
+                    <p class="mb-4">Explore my comprehensive project on leveraging artificial intelligence to streamline FEMA grant management processes.</p>
+                    <a href="/ai-project.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                        View Project Details →
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>© 2025 Josh Curry - Emergency Management Technology Portfolio</p>
-            <p class="text-sm mt-2">Created as part of EM420: Technology and Cybersecurity in Emergency Management</p>
-        </div>
-    </footer>
+    [Previous Footer]
 </body>
 </html>
