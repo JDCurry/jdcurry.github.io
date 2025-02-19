@@ -23,7 +23,27 @@
                 <!-- Project Overview -->
                 <div class="bg-gray-50 p-6 rounded-lg">
                     <h2 class="text-2xl font-bold mb-4">Project Summary</h2>
-                    <p class="mb-4">This project demonstrates the practical application of advanced AI technologies to streamline federal grant management processes, specifically focusing on FEMA's HMGP and BRIC programs. By leveraging multiple language models and implementing batch processing, we've created a scalable solution for emergency management departments.</p>
+                    <p class="mb-4">This project demonstrates the practical application of advanced AI technologies to streamline federal grant management processes, with an initial focus on FEMA's HMGP, BRIC, and FMAG programs. By leveraging multiple language models and implementing batch processing, we've created a scalable solution for emergency management departments. Future phases will expand to include performance-based grants and non-emergency federal assistance programs.</p>
+                    
+                    <!-- Grant Types -->
+                    <div class="mt-6 grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold mb-2">Initial Implementation</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Hazard Mitigation Grant Program (HMGP)</li>
+                                <li>Building Resilient Infrastructure and Communities (BRIC)</li>
+                                <li>Fire Management Assistance Grant (FMAG)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Future Expansion</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Performance-based grants</li>
+                                <li>Non-emergency federal assistance</li>
+                                <li>State and local grant programs</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,7 +273,60 @@
         </div>
     </section>
 
- <!-- Examples and Results -->
+    <!-- Development Status -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">
+				<h2 class="text-3xl font-bold mb-8 text-center">Development Status</h2>
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-green-50 rounded-lg text-center">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <p>Core Pipeline</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg text-center">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <p>HMGP Integration</p>
+                        </div>
+                        <div class="p-4 bg-yellow-50 rounded-lg text-center">
+                            <span class="text-yellow-600 text-xl">🔄</span>
+                            <p>BRIC Module</p>
+                        </div>
+                        <div class="p-4 bg-yellow-50 rounded-lg text-center">
+                            <span class="text-yellow-600 text-xl">🔄</span>
+                            <p>FMAG Module</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Future Development -->
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4">Future Development Phases</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">Near Term (6-12 months)</h4>
+                                <ul class="list-disc pl-6 space-y-1">
+                                    <li>Complete BRIC module integration</li>
+                                    <li>Implement FMAG processing</li>
+                                    <li>Enhance batch processing capabilities</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">Long Term (12-24 months)</h4>
+                                <ul class="list-disc pl-6 space-y-1">
+                                    <li>Performance-based grant integration</li>
+                                    <li>Non-emergency assistance modules</li>
+                                    <li>State/local grant compatibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples and Results -->
     <section class="py-16">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -261,11 +334,11 @@
 
                 <!-- Performance Metrics -->
                 <div class="bg-white p-8 rounded-lg shadow mb-8">
-                    <h3 class="text-xl font-bold mb-6">System Performance</h3>
+                    <h3 class="text-xl font-bold mb-6">Projected System Performance</h3>
                     <div class="grid md:grid-cols-4 gap-4 mb-8">
                         <div class="text-center p-4 bg-blue-50 rounded">
                             <p class="text-2xl font-bold text-blue-600">95%</p>
-                            <p class="text-sm">Accuracy Rate</p>
+                            <p class="text-sm">Anticipated Accuracy</p>
                         </div>
                         <div class="text-center p-4 bg-green-50 rounded">
                             <p class="text-2xl font-bold text-green-600">50%</p>
@@ -273,7 +346,7 @@
                         </div>
                         <div class="text-center p-4 bg-purple-50 rounded">
                             <p class="text-2xl font-bold text-purple-600">20+</p>
-                            <p class="text-sm">Hours Saved</p>
+                            <p class="text-sm">Hours Saved/App</p>
                         </div>
                         <div class="text-center p-4 bg-yellow-50 rounded">
                             <p class="text-2xl font-bold text-yellow-600">3x</p>
@@ -284,42 +357,38 @@
 
                 <!-- Example Outputs -->
                 <div class="grid md:grid-cols-2 gap-8">
-                    <!-- BCA Analysis -->
+                    <!-- Requirement Check -->
                     <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-xl font-bold mb-4">BCA Analysis</h3>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-bold mb-2">Input:</h4>
-                            <div class="bg-white p-3 rounded border border-gray-200">
-                                <pre class="text-sm">Project: Flood Mitigation
-Location: [44.839, -122.585]
-Damage History: $2.5M
-Timeline: 50 years</pre>
-                            </div>
-                        </div>
+                        <h3 class="text-xl font-bold mb-4">Requirement Validation</h3>
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold mb-2">Output:</h4>
-                            <div class="bg-white p-3 rounded border border-gray-200">
-                                <pre class="text-sm">BCR: 2.4
-Benefits: $5.8M NPV
-✓ FEMA Compliant</pre>
+                            <h4 class="font-bold mb-2">Sample Output:</h4>
+                            <div class="space-y-2">
+                                <p class="font-mono text-sm text-green-600">✓ Program Eligibility</p>
+                                <p class="font-mono text-sm text-green-600">✓ Documentation Requirements</p>
+                                <p class="font-mono text-sm text-yellow-600">! Environmental Review Needed</p>
+                                <p class="font-mono text-sm">Required Actions:</p>
+                                <ul class="list-disc pl-6 font-mono text-sm">
+                                    <li>Complete environmental assessment</li>
+                                    <li>Update project timeline</li>
+                                    <li>Revise cost estimates</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Requirement Validation -->
+                    <!-- Compliance Check -->
                     <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-xl font-bold mb-4">Requirement Check</h3>
+                        <h3 class="text-xl font-bold mb-4">Compliance Verification</h3>
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold mb-2">Validation Results:</h4>
+                            <h4 class="font-bold mb-2">Validation Status:</h4>
                             <div class="space-y-2">
-                                <p class="font-mono text-sm text-green-600">✓ HMGP Eligibility</p>
-                                <p class="font-mono text-sm text-green-600">✓ Environmental Review</p>
-                                <p class="font-mono text-sm text-yellow-600">! Section 106 Review</p>
-                                <p class="font-mono text-sm">Required Documents:</p>
+                                <p class="font-mono text-sm text-green-600">✓ FEMA Requirements</p>
+                                <p class="font-mono text-sm text-green-600">✓ Program Guidelines</p>
+                                <p class="font-mono text-sm text-yellow-600">! Additional Review Areas</p>
                                 <ul class="list-disc pl-6 font-mono text-sm">
-                                    <li>Historical documentation</li>
-                                    <li>Tribal consultation</li>
-                                    <li>Survey results</li>
+                                    <li>2 CFR 200 compliance</li>
+                                    <li>Program-specific criteria</li>
+                                    <li>State requirements</li>
                                 </ul>
                             </div>
                         </div>
@@ -339,48 +408,49 @@ Benefits: $5.8M NPV
             </div>
         </div>
     </footer>
-	<script type="text/babel">
-  const Navigation = ({ currentPage = 'home' }) => {
-    return (
-      <nav className="bg-blue-600 text-white p-4 shadow-lg">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-xl font-bold mb-4 md:mb-0">Josh Curry - Pierce College BAS Student</h1>
-          <div className="flex space-x-6">
-            <a 
-              href="/" 
-              className={`hover:text-gray-200 transition-colors duration-200 ${
-                currentPage === 'home' ? 'border-b-2' : ''
-              }`}
-            >
-              Course Overview
-            </a>
-            <a 
-              href="/about.html" 
-              className={`hover:text-gray-200 transition-colors duration-200 ${
-                currentPage === 'about' ? 'border-b-2' : ''
-              }`}
-            >
-              About Me
-            </a>
-            <a 
-              href="/ai-project.html" 
-              className={`hover:text-gray-200 transition-colors duration-200 ${
-                currentPage === 'ai-project' ? 'border-b-2' : ''
-              }`}
-            >
-              AI Project
-            </a>
-          </div>
-        </div>
-      </nav>
-    );
-  };
 
-  const root = document.getElementById('nav-root');
-  ReactDOM.render(
-    <Navigation currentPage="ai-project" />, // Change this value based on the current page
-    root
-  );
-</script>
+    <script type="text/babel">
+        const Navigation = ({ currentPage = 'home' }) => {
+            return (
+                <nav className="bg-blue-600 text-white p-4 shadow-lg">
+                    <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                        <h1 className="text-xl font-bold mb-4 md:mb-0">Josh Curry - Pierce College BAS Student</h1>
+                        <div className="flex space-x-6">
+                            <a 
+                                href="/" 
+                                className={`hover:text-gray-200 transition-colors duration-200 ${
+                                    currentPage === 'home' ? 'border-b-2' : ''
+                                }`}
+                            >
+                                Course Overview
+                            </a>
+                            <a 
+                                href="/about.html" 
+                                className={`hover:text-gray-200 transition-colors duration-200 ${
+                                    currentPage === 'about' ? 'border-b-2' : ''
+                                }`}
+                            >
+                                About Me
+                            </a>
+                            <a 
+                                href="/ai-project.html" 
+                                className={`hover:text-gray-200 transition-colors duration-200 ${
+                                    currentPage === 'ai-project' ? 'border-b-2' : ''
+                                }`}
+                            >
+                                AI Project
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            );
+        };
+
+        const root = document.getElementById('nav-root');
+        ReactDOM.render(
+            <Navigation currentPage="ai-project" />,
+            root
+        );
+    </script>
 </body>
 </html>
